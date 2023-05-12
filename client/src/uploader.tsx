@@ -24,7 +24,7 @@ const Uploader = () => {
         <input type="file" onChange={(e) => onDrop(e.target.files!)} />
         {uploadedFile && (
           <img
-            src={`http://localhost:8000/images/${uploadedFile}`}
+            src={`http://localhost:8000/upload/images/${uploadedFile}`}
             alt="Uploaded file"
           />
         )}

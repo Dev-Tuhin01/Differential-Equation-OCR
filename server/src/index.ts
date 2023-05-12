@@ -1,9 +1,14 @@
 import express from "express"; // const express = require("express");
+import cors from "cors";
 import multer from "multer"; // const multer = require("multer");
 import path from "path"; //const path = require("path");
 
 const app = express();
 const port = 8000;
+
+// enable CORS
+
+app.use(cors());
 
 // Set up multer to handle file uploads
 const storage = multer.diskStorage({
